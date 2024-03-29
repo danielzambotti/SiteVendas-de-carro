@@ -3,6 +3,7 @@
     <head>
         <!--Cabeçalho do Site = Orientações-->
         <meta charset="UTF-8"/>
+        <script type="text/javaScript" src="../javaScript/funcoes.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
 
         <title>AutoHaus</title> <!--Titulo da ABA-->
@@ -34,7 +35,7 @@
 
         </section>
         <section id="historia" class="inicial"> 
-            <h2>Historia Autohaus</h2>>
+            <h2>Historia Autohaus</h2>
             <p>
                 Em uma cidadezinha na Alemanha, há uma loja de carros gerenciada pelos irmãos Schmidt, 
                 apaixonados por veículos alemães. Um jovem chamado Markus entra na loja em busca de seu 
@@ -116,9 +117,61 @@
             <h5>Para mais informações: </h5>       
             <p> 11 99999-9999</p>    
         </section>     
+        
+
+        <section id="formulario" >
+            <h2>Formulário de Cadastro</h2>
+            <form>
+             <label id="nome">Nome: </label>
+             <input type="text" id="tNome"placeholder="Nome completo"><br>
+
+             <label id="Telefone">Telefone: </label>
+             <input type="text" id="tTelefone" placeholder="(99) 99999-9999"><br>
+
+             <label id="dtNascimento">Data de nascimento: </label>
+             <input type="date" id="tDtNascimento"><br>
+
+             <label id="endereco">Endereço: </label>
+             <input type="text" id="tEndereco" placeholder="R. "><br><br>
+
+               
+                <input type="radio" name="situacao" id="solteiro" value="Solteiro">
+                <label id="lSolteiro">Solterio</label><br>
+
+                <input type="radio" name="situacao" id="casado" value="Casado">
+                <label id="lCasado">Casado</label><br>
+
+                <input type="radio" name="situacao" id="divorciado" value="divorciado">
+                <label id="lDivorciado">Divorciado</label><br>
+
+                <input type="radio" name="situacao" id="viuvo" value="Viuvo">
+                <label id="lViuvo">Viuvo</label><br><br>
+               
+                <input type="checkbox" name="profissao" id="pFisica" value="Pessoa Física">
+                <label id="pFisica">Pessoa Física</label>
+
+                <input type="checkbox" name="profissao" id="pJuridica" value="Pessoa Jurídica">
+                <label id="pJuridica">Pessoa Jurídica</label><br><br>
+
+                <label id="lTrabalhando">Você está trabalhando?</label>
+                <select id="trabalhando" name="trabalho">
+                    <option value=""></option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br><br>
+            
+               
+            </form>  
+            
+            <button onclick="coletar()">Cadastrar</button>
+            <br><br>
+
+            <label id="lResultado">Resultado: </label>
+            <textarea id="resultado" rows="4" cols="40" readonly></textarea>
+        </section>
+  
         <footer id="rodape">
             <h5> Desenvolvido por Daniel Poggiato Zambotti Lima</h5>
         </footer>
-
     </body>    
  </html>

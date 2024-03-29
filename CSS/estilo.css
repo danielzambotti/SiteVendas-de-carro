@@ -12,6 +12,17 @@ body{
     background-color: #788;
 }
 
+h1{
+    text-align: center;
+    font-size: 400%;
+}
+
+h5{
+    font-size: 200%;
+}
+
+
+
 #imagemInicial{
     background-color:dimgray;
     width: 100%;
@@ -188,6 +199,11 @@ header{
     margin-top: 1%;
     font-size: px;
     background-color: dimgray;
+}
+
+#formulario{
+    text-align: center;
+    background-color:  dimgray; ;
 }
 
 a{
